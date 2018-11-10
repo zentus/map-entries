@@ -5,7 +5,7 @@ const car = {
 	brandModel: 'Saab_900'
 }
 
-const test = objectMap(car, (entry, initial) => {
+const test = objectMap(car, (entry, i, initial) => {
 	const {key, value} = entry
 
 	const brand = value.split('_')[0]

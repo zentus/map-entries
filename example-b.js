@@ -5,7 +5,7 @@ const myFruit = {
   color: 'Red'
 }
 
-const prefixedKeys = mapEntries(myFruit, ({key, value}, initial, index) => {
+const prefixedKeys = mapEntries(myFruit, ({key, value}, index) => {
   return {
     [`${index}_fruit_${key}`]: value
   }

@@ -13,7 +13,7 @@ const mapEntries = (object, callback) => {
 			[key]: value
 		}
 
-		const input = callback(keyValue, initial, index)
+		const input = callback(keyValue, index, initial)
 
 		acc = {
 			...acc,
