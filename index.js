@@ -15,12 +15,10 @@ const mapEntries = (object, callback) => {
 
 		const input = callback(keyValue, index, initial)
 
-		acc = {
+		return {
 			...acc,
 			...input
 		}
-
-		return acc
 	}, {})
 }
 

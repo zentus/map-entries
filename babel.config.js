@@ -1,5 +1,10 @@
 const presets = [
-  ["@babel/env"]
+  ["@babel/env", {
+    targets: {
+      ie: "11"
+    }
+	}],
+	["minify"]
 ]
 
 module.exports = { presets }

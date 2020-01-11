@@ -17,8 +17,9 @@
   "author": "zentus",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0"
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-preset-minify": "^0.5.1"
   }
 }

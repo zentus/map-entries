@@ -1,4 +1,4 @@
-const objectMap = require('./index.js')
+const objectMap = require('./dist/index.js')
 
 const car = {
 	color: 'Red',
