@@ -1,5 +1,5 @@
 # map-entries
-> Array.map() for objects
+> .map() for objects
 
 Map over an object, alter it's keys and values and return a new object.
 
@@ -14,19 +14,21 @@ npm install map-entries --save
 ```javascript
 import mapEntries from 'map-entries'
 
-const myFruit = {
+const myObject = {
   type: 'Apple',
   color: 'Red'
 }
 
-const prefixedKeys = mapEntries(myFruit, ({key, value}, initial, index) => {
-  return {
-    [`${index}_fruit_${key}`]: value
-  }
-})
+const mappedObject = mapEntries(myObject, ({key, value}, i) => ({
+  [`${key}_${i}`]: value
+}))
 
-console.log(prefixedKeys)
-//=>  { '0_fruit_type': 'Apple', '1_fruit_color': 'Red' }
+console.log(mappedObject)
+//=>
+{
+  '0_type': 'Apple',
+  '1_color': 'Red'
+}
 ```
 
 ## License
